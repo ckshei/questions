@@ -12,6 +12,8 @@ list_of_lists = []
 with open(filename) as fh: 
     counter = 1
     for line in fh: 
+        line = line.strip('\n')
+        line = line.strip('\t')
         list_of_lists.append(line[1:])
 
 
