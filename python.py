@@ -14,7 +14,7 @@ with open(filename) as fh:
     for line in fh: 
         line = line.strip('\n')
         line = line.strip('\t')
-        list_of_lists.append(line[1:])
+        list_of_lists.append(line)
 
 
 out_file = open("data.json", "w") 
